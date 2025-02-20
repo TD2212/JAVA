@@ -1,13 +1,19 @@
+import java.util.Scanner;
 public class starpatten {
     public static void main(String[] args) {
-        
-        for(int i=4;i>0;i--)
-        {
-            for(int j=0;j<i;j++)
+            Scanner sc=new Scanner(System.in);
+            System.out.print("Enter Number=");
+            int i=sc.nextInt();
+            while(i>0)
             {
-            System.out.print("*");
+                int j=0;
+                while(j<i)
+                {
+                    System.out.print("*");
+                    j++;
+                }
+                System.out.print("\n");
+                i--;
             }
-            System.out.println("\n");
         }
-    }
 }
